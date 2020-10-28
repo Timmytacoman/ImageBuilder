@@ -23,6 +23,7 @@ def multiply(F, M):
     F[1][0] = z
     F[1][1] = w
 
+
 def power(F, n):
     if n == 0 or n == 1:
         return;
@@ -34,7 +35,6 @@ def power(F, n):
 
     if n % 2 != 0:
         multiply(F, M)
-
 
 
 if __name__ == "__main__":

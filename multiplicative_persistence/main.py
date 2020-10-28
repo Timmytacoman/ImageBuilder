@@ -1,6 +1,7 @@
 import time
 
-def getPersistence(num, steps=0):
+
+def get_persistence(num, steps=0):
     # check if single digit
     if len(str(num)) == 1:
         print(f"Number of steps: {steps}")
@@ -12,7 +13,7 @@ def getPersistence(num, steps=0):
     # increment steps and print new num
     steps += 1
     print(product)
-    return getPersistence(product, steps)
+    return get_persistence(product, steps)
 
 
 # start timer
@@ -26,12 +27,11 @@ open("multiplicative_persistence.csv", 'w').close()
 f = open("multiplicative_persistence.csv", 'w')
 f.write("Number, Persistence")
 
-
 # printing and writing to file
 for j in range(int(amountOfNumbersToCalculate)):
     print(f"Calculating multiplicative persistence of {j}")
     print(j)
-    numSteps = getPersistence(j)
+    numSteps = get_persistence(j)
     # f = open("multiplicative_persistence.csv", "a")
     # f.write("\n")
     # f.write(f"{j}, {numSteps}")
@@ -44,6 +44,3 @@ endTime = time.time()
 print(f"Elapsed time: {endTime - startTime} seconds.")
 print(
     f"Average time per calculation: {(endTime - startTime) / amountOfNumbersToCalculate} seconds, for {int(amountOfNumbersToCalculate)} calculations.")
-
-
-
