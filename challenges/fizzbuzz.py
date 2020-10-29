@@ -7,6 +7,3 @@ def fizz_buzz(num):
         return "Buzz"
     else:
         return str(num)
-
-
-print(fizz_buzz(3))
