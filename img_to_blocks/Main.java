@@ -63,20 +63,24 @@ public class Main extends JavaPlugin {
 					// create map to array for indexing
 					String ar[] = line.split(", ");
 
-					int width = 400;
+					// read first element for width
+					int width = Integer.parseInt(ar[0]);
+					
+					//read second element for height
+					int height = Integer.parseInt(ar[1]);
 
-					int height = 206;
 
 					double total = width * height;
 					
 
 					
-					int counter = 0;
-					for (int y = 0; y < height; y++) {
-						for (int x = 0; x < width; x++) {
+					int counter = 2;
+					for (int y = 0; y < height; y++) { // height
+						for (int x = 0; x < width; x++) { // width
 
 							// find material
 							Material m = Material.getMaterial(ar[counter]);
+							System.out.println(ar[counter]);
 
 							// find location
 							location.setX(xloc + x);
@@ -89,7 +93,7 @@ public class Main extends JavaPlugin {
 							counter += 1;
 							
 							// send message
-							double percent = (counter) / total  * 100;
+							double percent = (counter - 2) / total  * 100;
 							System.out.println(String.valueOf(percent) + "% completed");
 
 						}
