@@ -9,6 +9,8 @@ def get_distance(v1, v2):
 
 
 def get_directory(path_to_file):
+    """gets directory from rgb_block_data.csv"""
+    # TODO: replace shulker boxes
     file = open(path_to_file, "r")
     line_counter = 0
     dictionary = {}
@@ -56,7 +58,7 @@ def get_block_equivalence(values, dictionary):
 def scan():
     # open image to process
     im = Image.open(
-        r'C:\Users\Timothy\PycharmProjects\misc_projects\img_to_blocks\images\rainbow.jpg')  # Can be many different formats.
+        r'C:\Users\Timothy\PycharmProjects\misc_projects\img_to_blocks\images\unnamed (1).jpg')  # Can be many different formats.
 
     # get width and height
     width, height = im.size
