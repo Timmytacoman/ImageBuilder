@@ -1,50 +1,55 @@
 RGB value,Block
-"Aqua - #33CCCC - rgb(51,204,204)",CYAN_SHULKER_BOX
+"Aqua - #33CCCC - rgb(51,204,204)",DIAMOND_BLOCK
 "Automatic - #FFFFFF - rgb(255,255,255)",IRON_BLOCK
-"Black - #100 - rgb(1,0,0)",BLACK_SHULKER_BOX
-"Blue - #00FF - rgb(0,0,255)",BLUE_SHULKER_BOX
-"Blue Grey - #6666CC - rgb(102,102,204)",PURPLE_SHULKER_BOX
+"Black - #100 - rgb(1,0,0)",OBSIDIAN
+"Blue - #00FF - rgb(0,0,255)",LAPIS_BLOCK
+"Blue Grey - #6666CC - rgb(102,102,204)",PURPUR_PILLAR
 "Bright Green - #0FF0 - rgb(0,255,0)",SLIME_BLOCK
 "Brown - #99330 - rgb(153,51,0)",RED_SANDSTONE
-"Coral - #FF8080 - rgb(255,128,128)",PINK_SHULKER_BOX
+"Coral - #FF8080 - rgb(255,128,128)",PINK_GLAZED_TERRACOTTA
 "Dark Blue - #0080 - rgb(0,0,128)",LAPIS_BLOCK
-"Dark Green - #0330 - rgb(0,51,0)",GREEN_SHULKER_BOX
-"Dark Purple - #66066 - rgb(102,0,102)",MAGENTA_SHULKER_BOX
-"Dark Red - #8000 - rgb(128,0,0)",RED_SHULKER_BOX
-"Dark Teal - #03366 - rgb(0,51,102)",BLUE_SHULKER_BOX
+"Dark Green - #0330 - rgb(0,51,0)",GREEN_GLAZED_TERRACOTTA
+"Dark Purple - #66066 - rgb(102,0,102)",PURPUR_BLOCK
+"Dark Red - #8000 - rgb(128,0,0)",NETHERRACK
+"Dark Teal - #03366 - rgb(0,51,102)",LAPIS_BLOCK
 "Dark Yellow - #80800 - rgb(128,128,0)",DIRT
 "Default Background - #FFFFFF - rgb(255,255,255)",IRON_BLOCK
 "Gold - #FFCC0 - rgb(255,204,0)",GOLD_BLOCK
-"Green - #0800 - rgb(0,128,0)",GREEN_SHULKER_BOX
-"Grey 25 - #C0C0C0 - rgb(192,192,192)",STONE
-"Grey 40 - #969696 - rgb(150,150,150)",STONE
+"Green - #0800 - rgb(0,128,0)",GREEN_GLAZED_TERRACOTTA
+"Grey 25 - #C0C0C0 - rgb(192,192,192)",SMOOTH_BRICK
+"Grey 40 - #969696 - rgb(150,150,150)",SMOOTH_BRICK
 "Grey 50 - #808080 - rgb(128,128,128)",STONE
-"Grey 80 - #333333 - rgb(51,51,51)",GRAY_SHULKER_BOX
+"Grey 80 - #333333 - rgb(51,51,51)",STONE
 "Ice Blue - #CCCCFF - rgb(204,204,255)",PURPUR_BLOCK
-"Indigo - #333399 - rgb(51,51,153)",BLUE_SHULKER_BOX
+"Indigo - #333399 - rgb(51,51,153)",LAPIS_BLOCK
 "Ivory - #FFFFCC - rgb(255,255,204)",SANDSTONE
 "Lavender - #CC99FF - rgb(204,153,255)",PURPUR_BLOCK
-"Light Blue - #3366FF - rgb(51,102,255)",CYAN_SHULKER_BOX
+"Light Blue - #3366FF - rgb(51,102,255)",DIAMOND_BLOCK
 "Light Green - #CCFFCC - rgb(204,255,204)",SLIME_BLOCK
-"Light Orange - #FF990 - rgb(255,153,0)",ORANGE_SHULKER_BOX
-"Light Turquoise - #CCFFFF - rgb(204,255,255)",LIGHT_BLUE_SHULKER_BOX
+"Light Orange - #FF990 - rgb(255,153,0)",PUMPKIN
+"Light Turquoise - #CCFFFF - rgb(204,255,255)",DIAMOND_BLOCK
 "Lime - #99CC0 - rgb(153,204,0)",SLIME_BLOCK
-"Ocean Blue - #066CC - rgb(0,102,204)",BLUE_SHULKER_BOX
-"Olive Green - #33330 - rgb(51,51,0)",BLACK_SHULKER_BOX
+"Ocean Blue - #066CC - rgb(0,102,204)",LAPIS_BLOCK
+"Olive Green - #33330 - rgb(51,51,0)",OBSIDIAN
 "Orange - #FF660 - rgb(255,102,0)",PUMPKIN
-"Pale Blue - #99CCFF - rgb(153,204,255)",LIGHT_BLUE_SHULKER_BOX
+"Pale Blue - #99CCFF - rgb(153,204,255)",DIAMOND_BLOCK
 "Periwinkle - #9999FF - rgb(153,153,255)",PURPUR_BLOCK
-"Pink - #FF0FF - rgb(255,0,255)",PINK_SHULKER_BOX
-"Plum - #993366 - rgb(153,51,102)",MAGENTA_SHULKER_BOX
+"Pink - #FF0FF - rgb(255,0,255)",PINK_GLAZED_TERRACOTTA
+"Plum - #993366 - rgb(153,51,102)",PURPUR_BLOCK
 "Red - #FF00 - rgb(255,0,0)",REDSTONE_BLOCK
-"Rose - #FF99CC - rgb(255,153,204)",PINK_SHULKER_BOX
-"Sea Green - #339966 - rgb(51,153,102)",GREEN_SHULKER_BOX
-"Sky Blue - #0CCFF - rgb(0,204,255)",LIGHT_BLUE_SHULKER_BOX
+"Rose - #FF99CC - rgb(255,153,204)",PINK_GLAZED_TERRACOTTA
+"Sea Green - #339966 - rgb(51,153,102)",GREEN_GLAZED_TERRACOTTA
+"Sky Blue - #0CCFF - rgb(0,204,255)",DIAMOND_BLOCK
 "Tan - #FFCC99 - rgb(255,204,153)",LEGACY_WOOD
-"Teal - #08080 - rgb(0,128,128)",LIGHT_BLUE_SHULKER_BOX
+"Teal - #08080 - rgb(0,128,128)",DIAMOND_BLOCK
 "Turqoise - #0FFFF - rgb(0,255,255)",DIAMOND_BLOCK
 "Turquoise - #0FFFF - rgb(0,255,255)",DIAMOND_BLOCK
-"Unknown - #000 - rgb(0,0,0)",BLACK_SHULKER_BOX
-"Very Light Yellow - #FFFF99 - rgb(255,255,153)",YELLOW_SHULKER_BOX
-"Violet - #80080 - rgb(128,0,128)",MAGENTA_SHULKER_BOX
+"Unknown - #000 - rgb(0,0,0)",OBSIDIAN
+"Very Light Yellow - #FFFF99 - rgb(255,255,153)",SANDSTONE
+"Violet - #80080 - rgb(128,0,128)",PURPUR_BLOCK
 "Light Violet - #B956A6 - rgb(184,86,166)",PURPUR_BLOCK
+"Peach - #EFCCB8 - rgb(239,204,184)",LEGACY_WOOD
+"Soft blue- #9cb6e9 - rgb(156,182,233)",ICE
+"Dark moderate red - #9f5555 - rgb(159,85,85)",NETHERRACK
+"Very dark orange - #59432d - rgb(89,67,45)",DIRT
+"Pale Tan - #CFA68F - rgb(207,166,143)",SANDSTONE
