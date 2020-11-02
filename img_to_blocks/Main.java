@@ -86,21 +86,52 @@ public class Main extends JavaPlugin {
 					double total = width * height;
 
 					int counter = 2;
-					for (int y = 0; y < height; y++) { // height
-						for (int x = 0; x < width; x++) { // width
+
+					
+					
+					
+					
+					
+					
+					Material value = dict.get_value("2000");
+
+					System.out.println(value);
+
+					for (int y = 0; y < 5; y++) { // height
+						for (int x = 0; x < 5; x++) { // width
 
 							// find material
 
-							Material m = Material.getMaterial(ar[counter]);
-							System.out.println(ar[counter]);
-
+							
+							
+							
+							
+							
 							// find location
 							location.setX(xloc + x);
 							location.setZ(zloc + y);
 
 							// place block
-							location.getBlock().setType(m); // m
+							location.getBlock().setType(value); // m
 
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
 							// increment counter
 							counter += 1;
 
