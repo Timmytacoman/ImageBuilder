@@ -33,6 +33,20 @@ public class Main extends JavaPlugin {
 		return line;
 	}
 
+//	public static void main(String[] args) {
+//
+//		Material a = getMaterial();
+//		System.out.println(a);
+//
+//	}
+//
+//	public static Material getMaterial() {
+//
+//		Material alpha = Material.getMaterial("BELL");
+//		return alpha;
+//
+//	}
+
 	// ------------------------------------------------------------------------------------------------------------
 
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
@@ -55,30 +69,28 @@ public class Main extends JavaPlugin {
 
 					// set y to feet level
 					location.setY(location.getY() - 1);
-					
+
 					// get location constants
 					float xloc = (float) location.getX();
 					float zloc = (float) location.getZ();
-					
+
 					// create map to array for indexing
 					String ar[] = line.split(", ");
 
 					// read first element for width
 					int width = Integer.parseInt(ar[0]);
-					
-					//read second element for height
+
+					// read second element for height
 					int height = Integer.parseInt(ar[1]);
 
-
 					double total = width * height;
-					
 
-					
 					int counter = 2;
 					for (int y = 0; y < height; y++) { // height
 						for (int x = 0; x < width; x++) { // width
 
 							// find material
+
 							Material m = Material.getMaterial(ar[counter]);
 							System.out.println(ar[counter]);
 
@@ -87,17 +99,20 @@ public class Main extends JavaPlugin {
 							location.setZ(zloc + y);
 
 							// place block
-							location.getBlock().setType(m);
-							
+							location.getBlock().setType(m); // m
+
 							// increment counter
 							counter += 1;
-							
+
 							// send message
-							double percent = (counter - 2) / total  * 100;
+							double percent = (counter - 2) / total * 100;
 							System.out.println(String.valueOf(percent) + "% completed");
 
 						}
 					}
+
+					// send done message to server
+					player.getServer().broadcastMessage("The build has finished!");
 
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
