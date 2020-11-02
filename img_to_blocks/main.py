@@ -10,36 +10,25 @@ def get_distance(v1, v2):
 
 def get_directory(path_to_file):
     """gets directory from rgb_block_data.csv"""
-    # TODO: replace shulker boxes
     file = open(path_to_file, "r")
     line_counter = 0
     dictionary = {}
     for line in file:
         if line_counter > 0:
-            # search from back to front for ','
-            # split into two parts
-            comma_is_present = False
-            counter = -1
-            while not comma_is_present:
-                char = line[counter]
-                if char == ",":
-                    break
-                else:
-                    counter -= 1
+            list_of_line = line.split(",")
+            rgb = list_of_line[0].split(".")
+            rgb = tuple(list(map(int, rgb)))
 
-            # find rgb
-            rgb = line[:counter - 1]
-            placeholder = rgb.find("rgb")
-            rgb = rgb[placeholder + 4:-1]
-            tuple_of_rgb = tuple(map(int, rgb.split(',')))
+            if "\n" in list_of_line[1]:
+                block = list_of_line[1][:-1]
+            else:
+                block = list_of_line[1]
 
-            # find block and chop off new line at end
-            block = line[counter + 1:-1]
-
-            dictionary[tuple_of_rgb] = block
+            dictionary[rgb] = block
 
         else:
             line_counter = 1
+    file.close()
     return dictionary
 
 
@@ -58,7 +47,7 @@ def get_block_equivalence(values, dictionary):
 def scan():
     # open image to process
     im = Image.open(
-        r'C:\Users\Timothy\PycharmProjects\misc_projects\img_to_blocks\images\dan.jpg')  # Can be many different formats.
+        r'C:\Users\Timothy\PycharmProjects\misc_projects\img_to_blocks\images\unnamed (1).jpg')  # Can be many different formats.
 
     # get width and height
     width, height = im.size
@@ -86,6 +75,26 @@ def write_block_data(s):
     file.close()
 
 
+def get_edu_def_for_java(path_to_file):
+    """Make sure rgb_block_data.csv has an empty line at the bottom"""
+    file = open(path_to_file, "r")
+    writer = open("edu_generator.txt", "w")
+    line_counter = 0
+    for line in file:
+        if line_counter > 0:
+            list_of_line = line.split(",")
+            block = list_of_line[1][:-1]
+            text = f'edu.put("{block}", Material.{block});\n'
+            writer.write(text)
+
+        else:
+            line_counter = 1
+
+    file.close()
+    writer.close()
+
+
 if __name__ == "__main__":
     """Warning: must add new line at end of rgb_block_data.csv!!!"""
     write_block_data(scan())
+    get_edu_def_for_java(r"C:\Users\Timothy\PycharmProjects\misc_projects\img_to_blocks\rgb_block_data.csv")
