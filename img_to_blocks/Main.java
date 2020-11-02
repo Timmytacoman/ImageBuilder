@@ -87,51 +87,20 @@ public class Main extends JavaPlugin {
 
 					int counter = 2;
 
-					
-					
-					
-					
-					
-					
-					Material value = dict.get_value("2000");
 
-					System.out.println(value);
-
-					for (int y = 0; y < 5; y++) { // height
-						for (int x = 0; x < 5; x++) { // width
+					for (int y = 0; y < height; y++) { // height
+						for (int x = 0; x < width; x++) { // width
 
 							// find material
-
-							
-							
-							
-							
+							Material m = dict.get_value(ar[counter]); 
 							
 							// find location
 							location.setX(xloc + x);
 							location.setZ(zloc + y);
 
 							// place block
-							location.getBlock().setType(value); // m
+							location.getBlock().setType(m); // m
 
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
 							// increment counter
 							counter += 1;
 
