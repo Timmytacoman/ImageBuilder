@@ -83,10 +83,10 @@ def custom_sort(ar):
 
 
 rnd_list = []
-for i in range(500):
+for i in range(1000):
     rnd_list.append(random.randint(0, 100))
 
 x = np.array(rnd_list)
-y = np.copy(x)
-print(time_custom(x))
+y = rnd_list.copy()
+print(time_custom(rnd_list))
 print(time_builtin(y))
