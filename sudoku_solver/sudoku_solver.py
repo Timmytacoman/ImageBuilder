@@ -40,7 +40,8 @@ def solve():
                         grid[y][x] = 0
                 return
     print(np.matrix(grid))
-    input("More?")
+    # input("More?")
+    exit()
 
 
 solve()

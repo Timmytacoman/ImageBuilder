@@ -47,7 +47,7 @@ def get_block_equivalence(values, dictionary):
 def scan():
     # open image to process
     im = Image.open(
-        r'C:\Users\Timothy\PycharmProjects\misc_projects\img_to_blocks\images\DBS_GoldRetriever_1280.jpg')  # Can be many different formats.
+        r'C:\Users\Timothy\PycharmProjects\misc_projects\img_to_blocks\images\chris_nelson-399x600.jpg')  # Can be many different formats.
 
     # get width and height
     width, height = im.size
